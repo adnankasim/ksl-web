@@ -184,11 +184,11 @@
       <div class="article-content text-center">
         <h3 class="text-center"><strong> <i class="fab fa-wpexplorer fa-1x"></i>&nbsp;AYO IKUTI KAMI</strong></h3>
         <h4>
-            <a href="#"><i class="fab fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/groups/kslung/" target="_blank"><i class="fab fa-facebook-square fa-3x" aria-hidden="true"></i></a>
             &nbsp;&nbsp;&nbsp;
-            <a href="#"><i class="fab fa-twitter fa-3x" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/kslung1" target="_blank"><i class="fab fa-twitter fa-3x" aria-hidden="true"></i></a>
             &nbsp;&nbsp;&nbsp;
-            <a href="#"><i class="fab fa-instagram fa-3x" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/kslung1/" target="_blank"><i class="fab fa-instagram fa-3x" aria-hidden="true"></i></a>
         </h4>
     </div>
 
