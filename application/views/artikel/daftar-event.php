@@ -1,7 +1,8 @@
 <div class="jumbotron flex-column d-flex event-jumbotron align-items-center justify-content-center">
       <h1 class="text-center text-uppercase">event mendatang</h1>
-  <h4 class="text-center"><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto necessitatibus quas a deleniti tenetur voluptatem mollitia praesentium, at temporibus! Maiores possimus fugiat amet vel, itaque, placeat eveniet in magni facilis.</div>
-  <div>Nostrum odio libero sit earum, eos, quam itaque, expedita aut nobis reprehenderit ex iste sint quo rerum autem dolorum incidunt officia ut consequuntur voluptatum. Iusto accusamus a ea adipisci, culpa?</div></h4>
+  <h4 class="text-center">
+    KSL-UNG juga mengadakan kegiatan-kegiatan IT yang menarik sepanjang tahun dan untuk menunjang kegiatan kegiatan tersebut kami juga sering bekerja sama dengan organisasi mahasiswa ataupun komunitas lain.
+</h4>
 </div>
 
  <div class="about-home flex-sm-column event-center flex-column d-flex align-items-center justify-content-center">

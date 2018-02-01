@@ -2,33 +2,34 @@
 
    <div class="jumbotron flex-column d-flex align-items-center justify-content-center">
    <img src="<?= base_url('assets/img/KSL-png.png') ?>" alt="">
-  <h4 class="text-center"><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto necessitatibus quas a deleniti tenetur voluptatem mollitia praesentium, at temporibus! Maiores possimus fugiat amet vel, itaque, placeat eveniet in magni facilis.</div>
-  <div>Nostrum odio libero sit earum, eos, quam itaque, expedita aut nobis reprehenderit ex iste sint quo rerum autem dolorum incidunt officia ut consequuntur voluptatum. Iusto accusamus a ea adipisci, culpa?</div></h4>
+  <h5 class="text-center" style="font-weight:bold">
+    Kelompok Studi Linux - Universitas Negeri Gorontalo (KSL-UNG) merupakan sebuah Komunitas Teknologi Informasi dan Komunikasi yang berbasis pada Universitas Negeri Gorontalo khususnya pada Fakultas Teknik. KSL-UNG hadir karena semangat para mahasiswa untuk mengampanyekan Teknologi Informasi dan Open Source kepada masyarakat di Gorontalo khususnya dilingkungan Universitas Negeri Gorontalo.
+  </h5>
 </div>
 
 
   <div class="about-home about-home-top flex-column d-flex align-items-center justify-content-center">
           <h4> <i class="fas fa-rocket fa-2x"></i> </h4>
-          <h4>Lorem Ipsum Dolor sit amet ?</h4>
+          <h4>Apa Yang Kami Lakukan ?</h4>
 
      <div class="flex-md-row flex-sm-column flex-column d-flex align-items-center justify-content-center">
 
        <div class="article-content text-center">
        <p class="fa fa-code fa-5x"></p>
        <h5 class="article-about">Divisi Pemprograman</h5>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus hic non inventore, quae laborum vel quisquam sapiente. Ut nobis culpa ducimus necessitatibus enim voluptates. Ex soluta sapiente ratione, sint voluptatum.</p>
+       <p>Divisi yang dibuat khusus untuk studi pengembangan perangkat lunak komputer. Di dalam Divisi ini anggota diajarkan tentang dasar dasar, development, deployment, dan maintenance perangkat lunak.</p>
       </div>
 
       <div class="article-content text-center">
         <p class="fa fa-wifi fa-5x"></p>
        <h5 class="article-about">Divisi Jaringan</h5>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus hic non inventore, quae laborum vel quisquam sapiente. Ut nobis culpa ducimus necessitatibus enim voluptates. Ex soluta sapiente ratione, sint voluptatum.</p>
+       <p>Divisi yang dibuat khusus untuk studi tentang jaringan komputer. Di dalam divisi ini anggota akan diajarkan tentang dasar dasar jaringan komputer, OSI 7 Layer, dan lain sebagainya</p>
       </div>
 
       <div class="article-content text-center">
         <p class="fa fa-camera-retro fa-5x"></p>
        <h5 class="article-about">Divisi Multimedia</h5>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus hic non inventore, quae laborum vel quisquam sapiente. Ut nobis culpa ducimus necessitatibus enim voluptates. Ex soluta sapiente ratione, sint voluptatum.</p>
+       <p>Divisi yang dibuat khusus untuk studi mengenai Multimedia. Di dalam divisi ini anggota akan diajarkan tentang Fotografi, Graphic Design, Video Editing, Multimedia Editing, Tipografi, Audio Editing dan lain sebagainya</p>
       </div>
 
 
@@ -84,6 +85,7 @@
 
        <div class="flex-md-row flex-sm-column flex-column d-flex align-items-center justify-content-center flex-wrap">
 
+<?php if(!empty($events)): ?>
 
 <?php foreach ($events as $event): ?>
  <div class="article-content text-center">
@@ -94,6 +96,12 @@
      <h6><span class="fa fa-calendar-alt"></span> &nbsp; <?= $event->waktu_agenda ?> &nbsp; | &nbsp; <span class="fa fa-map-marker"></span> &nbsp; <?= $event->tempat_agenda ?></h6>
  </div>
 <?php endforeach; ?>
+
+<?php else: ?>
+  <div class="article-content article-content-article text-center">
+    <h2 class="text-center" style="border-bottom:0">Event Belum Ada</h2>
+  </div>
+<?php endif ?>
 
       </div>
     <p class="lead text-center">
@@ -107,8 +115,9 @@
 
        <div class="flex-md-row flex-sm-column flex-column d-flex align-items-center justify-content-center flex-wrap">
 
-         <p><span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat voluptate esse illo vero doloribus. Optio magnam, consequuntur maiores excepturi veniam at. Culpa voluptates odit tempore placeat mollitia quidem, maxime dolorum.</span><span>Accusantium fugit architecto deleniti perferendis voluptates amet beatae quisquam dolorum voluptate laboriosam possimus sequi corporis, tenetur, vitae. Repudiandae recusandae autem eius. Repellendus odit at velit. Expedita, ullam molestiae velit fugiat.</span></span>
-          </p>
+         <p>
+            Sebagai komunitas IT yang selalu tumbuh dan berkembang maka kami tidak pernah menutup pintu untuk masyarakat untuk memberikan kritik, saran, dan ide agar kami bisa menjadi lebih baik lagi kedepannya.
+         </p>
 
        <?= form_open('') ?>
 
@@ -186,8 +195,7 @@
       <div class="article-content text-center">
         <h3 class="text-center"><strong> <i class="fab fa-html5"></i>&nbsp;TENTANG KSL-UNG.COM</strong></h3>
         <h4>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione magni maiores nam nulla commodi iure, nesciunt nihil. Ex, fugiat aspernatur ab molestias quis nihil aliquam iste deserunt, accusamus, qui dicta.</div>
-            <div>Esse omnis maiores quaerat cumque optio, cum dicta quod id sint, error est aut aperiam libero! Culpa natus labore quasi velit est numquam, nulla magni esse! Voluptate adipisci magnam in!</div>
+            Tujuan utama didirikannya ksl-ung.com adalah sebagai media informasi dan komunikasi sesama anggota, anggota-masyarakat, maupun anggota-penggiat IT & Open Source di seluruh dunia.
         </h4>
     </div>
         </div>
