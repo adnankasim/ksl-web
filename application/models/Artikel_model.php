@@ -187,7 +187,7 @@
       }else{
         $offset = ($page * $perPage) - $perPage;
       }
-      return $this->db->select('*')->from('artikel')->join('kategori','artikel.id_kategori = kategori.id_kategori')->join('user','artikel.id_user = user.id_user')->where('user.username', $username)->where('is_validasi', 'true')->order_by('id_artikel', 'DESC')->limit($perPage, $offset)->get()->result();
+      return $this->db->select('*')->from('artikel')->join('kategori','artikel.id_kategori = kategori.id_kategori')->join('user','artikel.id_user = user.id_user')->where('user.username', $username)->order_by('id_artikel', 'DESC')->limit($perPage, $offset)->get()->result();
     }
 
     // mendapatkan detail user
