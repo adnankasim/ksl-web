@@ -1,5 +1,5 @@
 <div class="jumbotron flex-column d-flex event-jumbotron align-items-center justify-content-center">
-      <h1 class="text-center text-uppercase">berbagi pengetahuan</h1>
+      <h1 class="text-center text-uppercase"><?= $detail->nama_kategori ?></h1>
   <h4 class="text-center"><?= $detail->deskripsi_kategori ?></h4>
 </div>
 
