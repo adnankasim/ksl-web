@@ -48,7 +48,7 @@
      $i = 1;
      foreach($allKategoris as $kategori):
     ?>
-    <a href="<?= base_url('kategori/'.$kategori->nama_kategori) ?>" class="list-group-item list-group-item-action"><strong><i class="fab fa-optin-monster"></i>&nbsp; <?= $kategori->nama_kategori ?></strong></a>
+    <a href="<?= base_url('kategori/'.$kategori->id_kategori) ?>" class="list-group-item list-group-item-action"><strong><i class="fab fa-optin-monster"></i>&nbsp; <?= $kategori->nama_kategori ?></strong></a>
     <?php
      $i++;
      endforeach;

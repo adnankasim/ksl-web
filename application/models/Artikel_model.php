@@ -151,7 +151,7 @@
 
     // mendapatkan detail kategori
     public function detailKategori($kategori){
-      return $this->db->where('nama_kategori', $kategori)->get('kategori')->row();
+      return $this->db->where('id_kategori', $kategori)->get('kategori')->row();
     }
 
     // mendapatkan semua artikel berdasarkan pencarian
