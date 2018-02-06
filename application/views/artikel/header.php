@@ -5,7 +5,7 @@
     <meta name="theme-color" content="orange">
     <title>KSL-UNG | Gorontalo Open Source Community</title>
     <meta name="description" content="Satu satunya Komunitas Free & Open Source Software (FOSS) yang masih tegak berdiri di tanah Hulondhalo dengan misi untuk meng-opensource-kan Indonesia terutama Gorontalo agar masyarakat terhindar dari maraknya pembajakan software dan bisa mengenal dunia teknologi lebih dalam">
-    <meta name="keywords" content="KSL, ksl, KSL-UNG, ksl-ung, komunitas open source gorontalo, Gorontalo Open Source Community">
+    <meta name="keywords" content="KSL, ksl ung, KSL-UNG, ksl-ung, komunitas open source gorontalo, Gorontalo Open Source Community, komunitas it gorontalo, gorontalo it, komunitas universitas negeri gorontalo, ung it">
     <meta name="author" content="KSL-UNG">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
