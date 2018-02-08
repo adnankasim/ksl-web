@@ -24,10 +24,10 @@
 					<div class="panel-body timeline-container">
             <dl class="dl-horizontal">
               <dt>Nama</dt>
-              <dd><strong><?= $user->id_user ?></strong></dd>
+              <dd><strong><?= $user->nama_user ?></strong></dd>
               <br>
               <dt>Username</dt>
-              <dd><strong>$user->username</strong></dd>
+              <dd><strong><?= $user->username ?></strong></dd>
               <br>
               <dt>Email</dt>
               <dd><strong><?= $user->email ?></strong></dd>
