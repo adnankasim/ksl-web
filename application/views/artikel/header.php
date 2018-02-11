@@ -12,12 +12,12 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu:400,500,700" rel="stylesheet">
     <link rel="icon" href="<?= base_url('assets/img/KSL-png.png') ?>" type="image/x-icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
     <script src="<?= base_url('assets/js/app.js') ?>" defer></script>
+    <link rel="stylesheet" href="<?= base_url('assets/lightbox-dist/css/lightbox.min.css') ?>">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -38,27 +38,30 @@
 
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link mr-2 mt-1" href="<?= base_url('tentang') ?>"> <i class="fas fa-users fa-1x"></i>&nbsp; tentang</a>
+        <a class="nav-link mr-2 mt-1" href="<?= base_url('tentang') ?>"> <i class="fa fa-users fa-1x"></i>&nbsp; tentang</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link mr-2 mt-1" href="<?= base_url('artikel') ?>"> <i class="fas fa-pencil-alt"></i>&nbsp; artikel</a>
+        <a class="nav-link mr-2 mt-1" href="<?= base_url('artikel') ?>"> <i class="fa fa-pencil"></i>&nbsp; artikel</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link mr-2 mt-1" href="<?= base_url('event') ?>"> <i class="fas fa-calendar-alt"></i>&nbsp; event</a>
+        <a class="nav-link mr-2 mt-1" href="<?= base_url('event') ?>"> <i class="fa fa-calendar"></i>&nbsp; event</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mr-2 mt-1" href="<?= base_url('galeri') ?>"> <i class="fa fa-photo"></i>&nbsp; Galeri</a>
       </li>
       <?php if($this->session->userdata('login')): ?>
         <li class="nav-item">
-            <a class="nav-link btn btn-warning mr-2 mt-1" href="<?= base_url('user/'.$this->session->userdata('username')) ?>" style="color: white"><i class="fas fa-user"></i>&nbsp; Profile</a>
+            <a class="nav-link btn btn-warning mr-2 mt-1" href="<?= base_url('user/'.$this->session->userdata('username')) ?>" style="color: white"><i class="fa fa-user"></i>&nbsp; Profile</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-warning mr-2 mt-1" href="<?= base_url('keluar') ?>" style="color: white"> <i class="fas fa-sign-out-alt"></i>&nbsp; keluar</a>
+            <a class="nav-link btn btn-warning mr-2 mt-1" href="<?= base_url('keluar') ?>" style="color: white"> <i class="fa fa-sign-out"></i>&nbsp; keluar</a>
           </li>
       <?php else: ?>
       <li class="nav-item">
-        <a class="nav-link btn btn-warning mr-2 mt-1" href="<?= base_url('masuk') ?>" style="color: white"> <i class="fas fa-sign-in-alt"></i>&nbsp; masuk</a>
+        <a class="nav-link btn btn-warning mr-2 mt-1" href="<?= base_url('masuk') ?>" style="color: white"> <i class="fa fa-sign-in"></i>&nbsp; masuk</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link btn btn-warning mr-2 mt-1" href="<?= base_url('daftar') ?>" style="color: white"> <i class="fas fa-user-plus"></i>&nbsp; daftar</a>
+        <a class="nav-link btn btn-warning mr-2 mt-1" href="<?= base_url('daftar') ?>" style="color: white"> <i class="fa fa-user-plus"></i>&nbsp; daftar</a>
       </li>
     <?php endif ?>
     </ul>

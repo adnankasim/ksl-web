@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="<?= base_url('assets/img/KSL-png.png') ?>" type="image/x-icons">
 	<title>KSL-UNG - Admin Dashboard</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link href="<?= base_url('assets/admin/css/bootstrap.min.css') ?>" rel="stylesheet">
 	<link href="<?= base_url('assets/admin/css/font-awesome.min.css') ?>" rel="stylesheet">
 	<link href="<?= base_url('assets/admin/css/datepicker3.css') ?>" rel="stylesheet">
@@ -16,6 +17,7 @@
 	<script src="js/html5shiv.js"></script>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<link rel="stylesheet" href="<?= base_url('assets/lightbox-dist/css/lightbox.min.css') ?>">
 </head>
 <body>
 	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -46,6 +48,7 @@
 			<li><a href="<?= base_url('admin-category') ?>"><em class="fa fa-etsy">&nbsp;</em> Kategori</a></li>
 			<li><a href="<?= base_url('admin-article') ?>"><em class="fa fa-newspaper-o">&nbsp;</em> Artikel</a></li>
 			<li><a href="<?= base_url('admin-event') ?>"><em class="fa fa-calendar">&nbsp;</em> Event</a></li>
+			<li><a href="<?= base_url('galeri/create') ?>"><em class="fa fa-photo">&nbsp;</em> Galeri</a></li>
 			<li><a href="<?= base_url('admin-message') ?>"><em class="fa fa-envelope">&nbsp;</em> Pesan</a></li>
 			<li><a href="<?= base_url('admin-user') ?>"><em class="fa fa-users">&nbsp;</em> User</a></li>
 			<?php if($this->session->userdata('role') == 'admin'): ?>

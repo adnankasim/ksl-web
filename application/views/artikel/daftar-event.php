@@ -19,7 +19,7 @@
         <a href="<?= base_url('event/'.$event->slug_agenda) ?>">
         <h3 class="text-center"><?= $event->nama_agenda ?></h3>
         </a>
-        <h6><span class="fa fa-calendar-alt"></span> &nbsp; <?= $event->waktu_agenda ?> &nbsp; | &nbsp; <span class="fa fa-map-marker"></span> &nbsp; <?= $event->tempat_agenda ?></h6>
+        <h6><span class="fa fa-calendar"></span> &nbsp; <?= $event->waktu_agenda ?> &nbsp; | &nbsp; <span class="fa fa-map-marker"></span> &nbsp; <?= $event->tempat_agenda ?></h6>
     </div>
 
   <?php endforeach ?>

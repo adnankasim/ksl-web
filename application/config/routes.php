@@ -69,3 +69,12 @@ $route['admin-article/(:any)'] = 'article/show/$1';
 $route['admin-message'] = 'message/index';
 $route['admin-message/(:num)'] = 'message/show/$1';
 $route['admin-message/delete'] = 'message/destroy';
+
+// Route untuk galeri foto
+$route['galeri'] = 'gallery/index';
+$route['galeri/create'] = 'gallery/create';
+$route['galeri/post'] = 'gallery/store';
+$route['galeri/edit/(:num)'] = 'gallery/edit/$1';
+$route['galeri/patch'] = 'gallery/update';
+$route['galeri/delete'] = 'gallery/destroy';
+$route['galeri/(:any)'] = 'gallery/show/$1';

@@ -9,7 +9,7 @@
 
 
   <div class="about-home about-home-top flex-column d-flex align-items-center justify-content-center">
-          <h4> <i class="fas fa-rocket fa-2x"></i> </h4>
+          <h4> <i class="fa fa-rocket fa-2x"></i> </h4>
           <h4>Apa Yang Kami Lakukan ?</h4>
 
      <div class="flex-md-row flex-sm-column flex-column d-flex align-items-center justify-content-center">
@@ -43,7 +43,7 @@
  <div class="article-home" style="background-color:white; border-top:2px solid orange; border-bottom:2px solid orange;">
    <div class="flex-md-row flex-sm-column flex-column d-flex align-items-center justify-content-center">
 
-    <h2 class="text-center"><i class="fas fa-pencil-alt"></i>&nbsp;artikel</h2>
+    <h2 class="text-center"><i class="fa fa-pencil"></i>&nbsp;artikel</h2>
     <a class="btn btn btn-warning btn-lg" style="color: white" href="<?= base_url('artikel') ?>" role="button">SELENGKAPNYA</a>
 
    </div>
@@ -81,7 +81,7 @@
  </div>
 
   <div class="about-home flex-sm-column flex-column d-flex align-items-center justify-content-center">
-      <h2 class="display-4 text-center"><i class="fas fa-calendar-alt"></i>&nbsp;event</h2>
+      <h2 class="display-4 text-center"><i class="fa fa-calendar"></i>&nbsp;event</h2>
 
        <div class="flex-md-row flex-sm-column flex-column d-flex align-items-center justify-content-center flex-wrap">
 
@@ -93,7 +93,7 @@
  <img src="<?= base_url('assets/img/'.$event->gambar_agenda) ?>" class="figure-img img-fluid rounded">
  </figure>
      <h3 class="text-center"><?= anchor('event/'.$event->slug_agenda, $event->nama_agenda) ?></h3>
-     <h6><span class="fa fa-calendar-alt"></span> &nbsp; <?= $event->waktu_agenda ?> &nbsp; | &nbsp; <span class="fa fa-map-marker"></span> &nbsp; <?= $event->tempat_agenda ?></h6>
+     <h6><span class="fa fa-calendar"></span> &nbsp; <?= $event->waktu_agenda ?> &nbsp; | &nbsp; <span class="fa fa-map-marker"></span> &nbsp; <?= $event->tempat_agenda ?></h6>
  </div>
 <?php endforeach; ?>
 
@@ -182,18 +182,18 @@
     </div>
 
       <div class="article-content text-center">
-        <h3 class="text-center"><strong> <i class="fab fa-wpexplorer fa-1x"></i>&nbsp;AYO IKUTI KAMI</strong></h3>
+        <h3 class="text-center"><strong> <i class="fa fa-wpexplorer fa-1x"></i>&nbsp;AYO IKUTI KAMI</strong></h3>
         <h4>
-            <a href="https://www.facebook.com/groups/kslung/" target="_blank"><i class="fab fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/groups/kslung/" target="_blank"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
             &nbsp;&nbsp;&nbsp;
-            <a href="https://twitter.com/kslung1" target="_blank"><i class="fab fa-twitter fa-3x" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/kslung1" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
             &nbsp;&nbsp;&nbsp;
-            <a href="https://www.instagram.com/kslung1/" target="_blank"><i class="fab fa-instagram fa-3x" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/kslung1/" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
         </h4>
     </div>
 
       <div class="article-content text-center">
-        <h3 class="text-center"><strong> <i class="fab fa-html5"></i>&nbsp;TENTANG KSL-UNG.COM</strong></h3>
+        <h3 class="text-center"><strong> <i class="fa fa-html5"></i>&nbsp;TENTANG KSL-UNG.COM</strong></h3>
         <h4>
             Tujuan utama didirikannya ksl-ung.com adalah sebagai media informasi dan komunikasi sesama anggota, anggota-masyarakat, maupun anggota-penggiat IT & Open Source di seluruh dunia.
         </h4>

@@ -15,7 +15,7 @@
         </div>
 
       <h2 class="mt-3 mb-3 ml-3 mr-3" style="border: none; text-transform:none"><strong><?= $getEvent->nama_agenda ?></strong></h2>
-      <h5 class="mt-3 mb-3 ml-3 mr-3"><span class="fa fa-calendar-alt"></span> &nbsp; <?= $getEvent->waktu_agenda ?> &nbsp; | &nbsp; <span class="fa fa-map-marker"></span> &nbsp; <?= $getEvent->tempat_agenda ?></h5>
+      <h5 class="mt-3 mb-3 ml-3 mr-3"><span class="fa fa-calendar"></span> &nbsp; <?= $getEvent->waktu_agenda ?> &nbsp; | &nbsp; <span class="fa fa-map-marker"></span> &nbsp; <?= $getEvent->tempat_agenda ?></h5>
        <figure class="figure text-center">
   <img src="<?= base_url('assets/img/'.$getEvent->gambar_agenda) ?>" class="figure-img img-fluid rounded" style="width: 75%; height: auto">
 </figure>
@@ -47,7 +47,7 @@
      $i = 1;
      foreach($allKategoris as $kategori):
     ?>
-    <a href="<?= base_url('kategori/'.$kategori->id_kategori) ?>" class="list-group-item list-group-item-action"><strong><i class="fab fa-optin-monster"></i>&nbsp; <?= $kategori->nama_kategori ?></strong></a>
+    <a href="<?= base_url('kategori/'.$kategori->id_kategori) ?>" class="list-group-item list-group-item-action"><strong><i class="fa fa-optin-monster"></i>&nbsp; <?= $kategori->nama_kategori ?></strong></a>
     <?php
      $i++;
      endforeach;

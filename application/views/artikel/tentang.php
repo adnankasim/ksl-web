@@ -17,7 +17,7 @@
 
       <div class="article-content struktur text-center" style="flex-basis:40vw">
       <figure class="figure">
-     <img src="<?= base_url('assets/img/pakthohir.jpg') ?>" class="figure-img img-fluid rounded-circle" alt="A generic square placeholder image with rounded corners in a figure.">
+     <img src="<?= base_url('assets/img/pakthohir.jpg') ?>" class="figure-img img-fluid rounded-circle">
        </figure>
       <h5>PEMBINA / PENGARAH</h5>
       <hr>
@@ -27,7 +27,7 @@
 
      <div class="article-content struktur text-center" style="flex-basis:40vw">
       <figure class="figure">
-     <img src="<?= base_url('assets/img/IMG_20170316_074743_4351.jpg') ?>" class="figure-img img-fluid rounded-circle" alt="A generic square placeholder image with rounded corners in a figure.">
+     <img src="<?= base_url('assets/img/nan.jpg') ?>" class="figure-img img-fluid rounded-circle">
        </figure>
       <h5>ketua umum</h5>
       <hr>
@@ -37,7 +37,7 @@
 
      <div class="article-content struktur text-center" style="flex-basis:40vw">
       <figure class="figure">
-     <img src="<?= base_url('assets/img/dyat.jpg') ?>" class="figure-img img-fluid rounded-circle" alt="A generic square placeholder image with rounded corners in a figure.">
+     <img src="<?= base_url('assets/img/dyat.jpg') ?>" class="figure-img img-fluid rounded-circle">
        </figure>
       <h5>sekretaris umum</h5>
       <hr>
@@ -47,7 +47,7 @@
 
      <div class="article-content struktur text-center" style="flex-basis:40vw">
       <figure class="figure">
-     <img src="<?= base_url('assets/img/shan.jpg') ?>" class="figure-img img-fluid rounded-circle" alt="A generic square placeholder image with rounded corners in a figure.">
+     <img src="<?= base_url('assets/img/shan.jpg') ?>" class="figure-img img-fluid rounded-circle">
        </figure>
       <h5>bendahara umum</h5>
       <hr>
@@ -57,7 +57,7 @@
 
      <div class="article-content struktur text-center" style="flex-basis:40vw">
       <figure class="figure">
-     <img src="<?= base_url('assets/img/ardu.jpg') ?>" class="figure-img img-fluid rounded-circle" alt="A generic square placeholder image with rounded corners in a figure.">
+     <img src="<?= base_url('assets/img/ardu.jpg') ?>" class="figure-img img-fluid rounded-circle">
        </figure>
       <h5>ketua divisi pemrograman</h5>
       <hr>
@@ -67,7 +67,7 @@
 
      <div class="article-content struktur text-center" style="flex-basis:40vw">
       <figure class="figure">
-     <img src="<?= base_url('assets/img/kris.jpg') ?>" class="figure-img img-fluid rounded-circle" alt="A generic square placeholder image with rounded corners in a figure.">
+     <img src="<?= base_url('assets/img/kris.jpg') ?>" class="figure-img img-fluid rounded-circle">
        </figure>
       <h5>ketua divisi jaringan</h5>
       <hr>
@@ -77,7 +77,7 @@
 
      <div class="article-content struktur text-center" style="flex-basis:40vw">
       <figure class="figure">
-     <img src="<?= base_url('assets/img/dian.jpg') ?>" class="figure-img img-fluid rounded-circle" alt="A generic square placeholder image with rounded corners in a figure.">
+     <img src="<?= base_url('assets/img/dian.jpg') ?>" class="figure-img img-fluid rounded-circle">
        </figure>
       <h5>ketua divisi multimedia</h5>
       <hr>
@@ -91,7 +91,7 @@
  <hr>
 
  <div class="about-home about-home-top flex-column d-flex align-items-center justify-content-center">
-        <h4> <i class="fas fa-rocket fa-2x"></i> </h4>
+        <h4> <i class="fa fa-rocket fa-2x"></i> </h4>
          <h4>Apa Yang Kami Lakukan ?</h4>
 
     <div class="flex-md-row flex-sm-column flex-column d-flex align-items-center justify-content-center">

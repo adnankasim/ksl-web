@@ -26,7 +26,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
+				<div class="col-xs-6 col-md-2 col-lg-2 no-padding">
 					<div class="panel panel-blue panel-widget border-right">
 						<div class="row no-padding"><em class="fa fa-xl fa-newspaper-o color-orange"></em>
 							<div class="large"><?= $jumlah_artikel ?></div>
@@ -34,7 +34,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
+				<div class="col-xs-6 col-md-2 col-lg-2 no-padding">
 					<div class="panel panel-orange panel-widget border-right">
 						<div class="row no-padding"><em class="fa fa-xl fa-calendar color-teal"></em>
 							<div class="large"><?= $jumlah_event ?></div>
@@ -42,11 +42,19 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
+				<div class="col-xs-6 col-md-2 col-lg-2 no-padding">
 					<div class="panel panel-red panel-widget ">
 						<div class="row no-padding"><em class="fa fa-xl fa-users color-red"></em>
 							<div class="large"><?= $jumlah_user ?></div>
 							<div class="text-muted">User</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
+					<div class="panel panel-red panel-widget ">
+						<div class="row no-padding"><em class="fa fa-xl fa-photo"></em>
+							<div class="large"><?= $jumlah_galeri ?></div>
+							<div class="text-muted">Galeri</div>
 						</div>
 					</div>
 				</div>
@@ -145,6 +153,42 @@
 									<a href="<?= base_url('admin-event/edit/'.$event->id_agenda) ?>" class="btn btn-warning pull-left" style="color:white;">Edit</a>
 									<?= form_open('admin-event/delete', ['class' => 'pull-left']) ?>
 									<?= form_hidden('id_agenda', $event->id_agenda) ?>
+									<?= form_submit(null, 'Hapus', ['class' => 'btn btn-danger']) ?>
+									<?= form_close() ?>
+								</td>
+							</tr>
+						<?php endforeach ?>
+						</table>
+					</div>
+				</div>
+
+				<div class="panel panel-default ">
+					<?php if(!empty($this->session->flashdata('info'))): ?>
+						<div class="panel-heading text-center" style="color:blue; border:1px solid blue;">
+							<?= $this->session->flashdata('info') ?>
+						</div>
+					<?php endif ?>
+					<div class="panel-heading">
+						Galeri
+						<span class="pull-right clickable panel-toggle panel-button-tab-left"><em class="fa fa-toggle-up"></em></span></div>
+					<div class="panel-body timeline-container">
+						<table class="table">
+							<tr>
+								<th>No</th>
+								<th>Nama</th>
+								<th>Waktu</th>
+								<th>Action</th>
+							</tr>
+							<?php $i = 1 ?>
+							<?php foreach ($galeris as $galeri): ?>
+              <tr>
+								<td><?= $i++ ?></td>
+								<td><a href="<?= base_url('galeri/'.$galeri->slug_galeri) ?>" target="_blank"><?= $galeri->nama_galeri ?></a></td>
+								<td><?= $galeri->waktu_galeri ?></td>
+								<td>
+									<a href="<?= base_url('galeri/edit/'.$galeri->id_galeri) ?>" class="btn btn-warning pull-left" style="color:white;">Edit</a>
+									<?= form_open('galeri/delete', ['class' => 'pull-left']) ?>
+									<?= form_hidden('id_galeri', $galeri->id_galeri) ?>
 									<?= form_submit(null, 'Hapus', ['class' => 'btn btn-danger']) ?>
 									<?= form_close() ?>
 								</td>
