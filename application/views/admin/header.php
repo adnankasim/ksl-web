@@ -44,7 +44,7 @@
 		</div>
 		<div class="divider"></div>
 		<ul class="nav menu">
-			<li><a href="<?= base_url('admin') ?>"><em class="fa fa-dashboard">&nbsp;</em> Dashboard</a></li>
+			<li><a href="<?= base_url('root') ?>"><em class="fa fa-dashboard">&nbsp;</em> Dashboard</a></li>
 			<li><a href="<?= base_url('admin-category') ?>"><em class="fa fa-etsy">&nbsp;</em> Kategori</a></li>
 			<li><a href="<?= base_url('admin-article') ?>"><em class="fa fa-newspaper-o">&nbsp;</em> Artikel</a></li>
 			<li><a href="<?= base_url('admin-event') ?>"><em class="fa fa-calendar">&nbsp;</em> Event</a></li>
