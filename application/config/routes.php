@@ -32,7 +32,8 @@ $route['edit-user/(:any)'] = 'artikel/edit_user/$1';
 $route['sidebar'] = 'artikel/sidebar';
 
 // Route untuk admin dashboard
-$route['admin'] = 'admin/index';
+// $route['admin'] = 'admin/index';
+$route['root'] = 'root/index';
 
 // Route untuk CRUD Kategori
 $route['admin-category'] = 'category/index';
