@@ -1,4 +1,4 @@
-  <div class="about-home flex-sm-column event-center flex-column d-flex align-items-center justify-content-center">
+  <div class="about-home flex-sm-column event-center flex-column d-flex align-items-center justify-content-center" id="galeri-page">
 
     <h2 class="text-center text-uppercase">Galeri <?= $detailGaleri->nama_galeri ?></h2>
     <p><?= $detailGaleri->deskripsi_galeri ?></p>

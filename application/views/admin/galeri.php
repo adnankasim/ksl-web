@@ -93,7 +93,7 @@
 								<div class="form-group">
 									<label class="col-md-3 control-label" for="message">Deskripsi Galeri</label>
 									<div class="col-md-9">
-										<?= form_textarea('deskripsi_galeri', $input->deskripsi_galeri, ['class' => 'form-control', 'placeholder' => 'Deskripsi Galeri']) ?>
+										<?= form_textarea('deskripsi_galeri', $input->deskripsi_galeri, ['class' => 'form-control', 'placeholder' => 'Deskripsi Galeri', 'id' => 'editor']) ?>
 									</div>
 								</div>
 

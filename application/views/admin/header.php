@@ -10,14 +10,21 @@
 	<link href="<?= base_url('assets/admin/css/font-awesome.min.css') ?>" rel="stylesheet">
 	<link href="<?= base_url('assets/admin/css/datepicker3.css') ?>" rel="stylesheet">
 	<link href="<?= base_url('assets/admin/css/styles.css') ?>" rel="stylesheet">
-
-	<!--Custom Font-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 	<link rel="stylesheet" href="<?= base_url('assets/lightbox-dist/css/lightbox.min.css') ?>">
+	<script src="<?= base_url('assets/tinymce/js/tinymce/jquery.tinymce.min.js') ?>"></script>
+	<script src="<?= base_url('assets/tinymce/js/tinymce/tinymce.min.js') ?>"></script>
+	<script>
+		tinymce.init({
+			selector:'#editor',
+			theme: 'modern',
+			mobile: { theme: 'mobile' }
+		});
+	</script>
 </head>
 <body>
 	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">

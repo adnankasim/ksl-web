@@ -98,6 +98,9 @@ nav.navbar{
 .article-content-article img{
     width: 100%;
 }
+.article-content-article p{
+  padding: 0 10px 0 10px;
+}
 .contact-home{
     background-color: #201e1b;
     color: white;

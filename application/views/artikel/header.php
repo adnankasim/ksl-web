@@ -18,6 +18,15 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
     <script src="<?= base_url('assets/js/app.js') ?>" defer></script>
     <link rel="stylesheet" href="<?= base_url('assets/lightbox-dist/css/lightbox.min.css') ?>">
+    <script src="<?= base_url('assets/tinymce/js/tinymce/jquery.tinymce.min.js') ?>"></script>
+    <script src="<?= base_url('assets/tinymce/js/tinymce/tinymce.min.js') ?>"></script>
+    <script>
+      tinymce.init({
+        selector:'#editor',
+        theme: 'modern',
+        mobile: { theme: 'mobile' }
+      });
+    </script>
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>

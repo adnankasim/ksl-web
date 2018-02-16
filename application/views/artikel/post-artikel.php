@@ -28,7 +28,7 @@
   </div>
   <div class="form-group">
     <p class="h4"><strong>Isi</strong></p>
-    <?= form_textarea('isi', $input->isi, ['class' => 'form-control textarea-artikel']) ?>
+    <?= form_textarea('isi', $input->isi, ['class' => 'form-control textarea-artikel', 'id' => 'editor']) ?>
   </div>
   <div class="form-grup form-inline">
       <?= form_submit('submit', 'Posting', ['class' => 'form-control btn btn-primary btn-lg mr-3 mb-3 ml-3']) ?>

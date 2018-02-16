@@ -20,7 +20,7 @@
        <figure class="figure text-center">
   <img src="<?= base_url('assets/img/'.$getArtikel->gambar_artikel) ?>" class="figure-img img-fluid rounded" style="width: 75%; height: auto">
 </figure>
-        <p class="h5 pl-3 pr-3 pb-3"><?= $getArtikel->isi_artikel ?></p>
+        <p><?= $getArtikel->isi_artikel ?></p>
         <p class="small h5 pl-3 pr-3 pb-3">Telah Dibaca Sebanyak : <?= $getArtikel->tampil ?> kali</p>
     </div>
 
