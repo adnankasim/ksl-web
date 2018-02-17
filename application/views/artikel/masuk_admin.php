@@ -11,8 +11,8 @@
 
       <?= form_open('login/admin', ['style' => 'width: 75vw;']) ?>
   <div class="form-group">
-    <?= form_label('Username', 'email', ['class' => 'h5', 'style' => 'font-weight: bold']) ?>
-    <?= form_input('email', $input->email, ['class' => 'form-control']) ?>
+    <?= form_label('Username', 'username', ['class' => 'h5', 'style' => 'font-weight: bold']) ?>
+    <?= form_input('username', $input->username, ['class' => 'form-control']) ?>
   </div>
   <div class="form-group">
     <?= form_label('Password', 'password', ['class' => 'h5', 'style' => 'font-weight: bold']) ?>

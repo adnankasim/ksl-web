@@ -26,7 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         return;
       }
       $data['username'] = $input->username;
-      $data['password'] = sha1(md5($input->username));
+      $data['password'] = sha1(md5($input->password));
       $data['role'] = $input->role;
       $data = (object) $data;
       $this->operator->insertOperator($data);

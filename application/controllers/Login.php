@@ -52,10 +52,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         $main_view = "artikel/masuk_admin";
         $this->load->view('template', compact('main_view', 'input'));
       }else{
-        $email = $this->input->post('email', TRUE);
+        $username = $this->input->post('username', TRUE);
         $password = $this->input->post('password', TRUE);
         $password = sha1(md5($password));
-        $user = $this->login->checkAdmin($email, $password);
+        $user = $this->login->checkAdmin($username, $password);
 
         if(count($user)){
 

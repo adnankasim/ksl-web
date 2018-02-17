@@ -7,8 +7,8 @@
     }
 
     // mengecek admin
-    public function checkAdmin($email, $password){
-      return $this->db->where('username', $email)->where('password', $password)->get('admin')->row();
+    public function checkAdmin($username, $password){
+      return $this->db->where('username', $username)->where('password', $password)->get('admin')->row();
     }
 
     // mengecek username user
@@ -73,7 +73,8 @@
     public function loginDefaultValues(){
       return [
         'password' => '',
-        'email' => ''
+        'email' => '',
+        'username' => ''
       ];
     }
 
