@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="theme-color" content="orange">
     <title>KSL-UNG | Gorontalo Open Source Community</title>
-    <meta name="description" content="Satu satunya Komunitas Free & Open Source Software (FOSS) yang masih tegak berdiri di tanah Hulondhalo dengan misi untuk meng-opensource-kan Indonesia terutama Gorontalo agar masyarakat terhindar dari maraknya pembajakan software dan bisa mengenal dunia teknologi lebih dalam">
-    <meta name="keywords" content="KSL, ksl ung, KSL-UNG, ksl-ung, komunitas open source gorontalo, Gorontalo Open Source Community, komunitas it gorontalo, gorontalo it, komunitas universitas negeri gorontalo, ung it">
-    <meta name="author" content="KSL-UNG">
+    <?php if(!empty($getArtikel)): ?>
+      <meta name="description" content="<?= substr($getArtikel->isi_artikel, 0, 100) ?>">
+      <meta name="keywords" content="<?= $getArtikel->judul_artikel ?>">
+      <meta name="author" content="<?= $getArtikel->nama_user ?>">
+    <?php elseif(!empty($detailGaleri)): ?>
+      <meta name="description" content="<?= substr($detailGaleri->deskripsi_galeri, 0, 100) ?>">
+      <meta name="keywords" content="<?= $detailGaleri->nama_galeri ?>">
+    <?php elseif(!empty($getEvent)): ?>
+      <meta name="description" content="<?= substr($getEvent->deskripsi_agenda, 0, 100) ?>">
+      <meta name="keywords" content="<?= $getEvent->nama_agenda ?>">
+    <?php else: ?>
+      <meta name="description" content="Satu satunya Komunitas Free & Open Source Software (FOSS) yang masih tegak berdiri di tanah Hulondhalo dengan misi untuk meng-opensource-kan Indonesia terutama Gorontalo agar masyarakat terhindar dari maraknya pembajakan software dan bisa mengenal dunia teknologi lebih dalam">
+      <meta name="keywords" content="KSL, ksl ung, KSL-UNG, ksl-ung, komunitas open source gorontalo, Gorontalo Open Source Community, komunitas it gorontalo, gorontalo it, komunitas universitas negeri gorontalo, ung it">
+      <meta name="author" content="KSL-UNG">
+    <?php endif ?>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu:400,500,700" rel="stylesheet">
