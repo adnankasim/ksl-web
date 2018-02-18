@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="theme-color" content="orange">
-    <title>KSL-UNG | Gorontalo Open Source Community</title>
     <?php if(!empty($getArtikel)): ?>
+      <title><?= $detailGaleri->nama_galeri ?> | KSL-UNG</title>
       <meta name="description" content="<?= substr($getArtikel->isi_artikel, 0, 100) ?>">
       <meta name="keywords" content="<?= $getArtikel->judul_artikel ?>">
       <meta name="author" content="<?= $getArtikel->nama_user ?>">
     <?php elseif(!empty($detailGaleri)): ?>
+      <title><?= $detailGaleri->nama_galeri ?> | KSL-UNG</title>
       <meta name="description" content="<?= substr($detailGaleri->deskripsi_galeri, 0, 100) ?>">
       <meta name="keywords" content="<?= $detailGaleri->nama_galeri ?>">
     <?php elseif(!empty($getEvent)): ?>
+      <title><?= $getEvent->nama_agenda ?> | KSL-UNG</title>
       <meta name="description" content="<?= substr($getEvent->deskripsi_agenda, 0, 100) ?>">
       <meta name="keywords" content="<?= $getEvent->nama_agenda ?>">
     <?php else: ?>
+      <title>Gorontalo Open Source Community | KSL-UNG</title>
       <meta name="description" content="Satu satunya Komunitas Free & Open Source Software (FOSS) yang masih tegak berdiri di tanah Hulondhalo dengan misi untuk meng-opensource-kan Indonesia terutama Gorontalo agar masyarakat terhindar dari maraknya pembajakan software dan bisa mengenal dunia teknologi lebih dalam">
       <meta name="keywords" content="KSL, ksl ung, KSL-UNG, ksl-ung, komunitas open source gorontalo, Gorontalo Open Source Community, komunitas it gorontalo, gorontalo it, komunitas universitas negeri gorontalo, ung it">
       <meta name="author" content="KSL-UNG">
