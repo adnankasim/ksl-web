@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="theme-color" content="orange">
     <?php if(!empty($getArtikel)): ?>
-      <title><?= $detailGaleri->nama_galeri ?> | KSL-UNG</title>
+      <title><?= $getArtikel->judul_artikel ?> | KSL-UNG</title>
       <meta name="description" content="<?= substr($getArtikel->isi_artikel, 0, 100) ?>">
       <meta name="keywords" content="<?= $getArtikel->judul_artikel ?>">
       <meta name="author" content="<?= $getArtikel->nama_user ?>">
